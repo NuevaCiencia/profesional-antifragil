@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +31,7 @@
         }
     </style>
 </head>
+
 <body class="bg-slate-900 text-slate-50 antialiased selection:bg-blue-500 selection:text-white">
 
     <!-- Navbar -->
@@ -49,12 +51,14 @@
     <!-- Main Content -->
     <main class="pt-28 pb-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            
+
             <!-- Alert Tag -->
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-700 bg-slate-800/50 mb-8">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-700 bg-slate-800/50 mb-8">
                 <span class="relative flex h-2 w-2">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                 </span>
                 <span class="text-xs font-medium text-slate-300 tracking-wide">INFORME DE INVESTIGACIÓN GRATUITO</span>
             </div>
@@ -69,39 +73,52 @@
 
             <!-- Subtitle -->
             <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-                Hemos identificado las 5 señales ocultas que indican que un rol gerencial está a punto de ser reemplazado. Descubre tu nivel de riesgo real en 10 minutos.
+                Hemos identificado las 5 señales ocultas que indican que un rol gerencial está a punto de ser
+                reemplazado. Descubre tu nivel de riesgo real en 10 minutos.
             </p>
 
             <!-- Mockup Image -->
             <div class="relative w-full max-w-sm mx-auto mb-12 group perspective-1000">
                 <!-- Glow effect -->
-                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-                
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200">
+                </div>
+
                 <!-- Image Container -->
                 <div class="relative transform transition-all duration-500 hover:scale-[1.02] hover:-rotate-1">
-                     <img src="portada-auditoria.png" alt="Auditoría de Vulnerabilidad 2025" class="w-full h-auto rounded-lg shadow-2xl shadow-blue-900/20 border border-slate-700/50">
+                    <img src="public/portada-auditoria.png" alt="Auditoría de Vulnerabilidad 2025"
+                        alt="Auditoría de Vulnerabilidad 2025"
+                        class="w-full h-auto rounded-lg shadow-2xl shadow-blue-900/20 border border-slate-700/50">
                 </div>
             </div>
 
             <!-- Capture Form -->
             <div class="max-w-md mx-auto mb-16">
-                <form class="flex flex-col gap-4" onsubmit="event.preventDefault(); alert('Gracias por tu interés. (Simulación)');">
+                <form class="flex flex-col gap-4"
+                    onsubmit="event.preventDefault(); alert('Gracias por tu interés. (Simulación)');">
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <svg class="h-5 w-5 text-slate-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <svg class="h-5 w-5 text-slate-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                fill="currentColor" aria-hidden="true">
                                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                             </svg>
                         </div>
-                        <input type="email" required placeholder="tucorreo@empresa.com" class="w-full bg-slate-800 border border-slate-700 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-3.5 placeholder-slate-500 transition-colors" />
+                        <input type="email" required placeholder="tucorreo@empresa.com"
+                            class="w-full bg-slate-800 border border-slate-700 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-3.5 placeholder-slate-500 transition-colors" />
                     </div>
-                    
-                    <button type="submit" class="w-full text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-3.5 text-center shadow-lg shadow-blue-500/30 transition-all transform hover:-translate-y-0.5">
+
+                    <button type="submit"
+                        class="w-full text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-3.5 text-center shadow-lg shadow-blue-500/30 transition-all transform hover:-translate-y-0.5">
                         ENVIARME LA AUDITORÍA AHORA →
                     </button>
-                    
+
                     <p class="text-xs text-slate-500 flex items-center justify-center gap-1">
-                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
                         Privacidad garantizada. Unboring emails only.
                     </p>
                 </form>
@@ -110,11 +127,14 @@
             <!-- Authority Bar -->
             <div class="border-t border-slate-800 pt-10 pb-4">
                 <p class="text-sm text-slate-500 mb-6 font-medium">Inteligencia basada en reportes de:</p>
-                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+                <div
+                    class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
                     <!-- Text placeholders for logos as per instructions to use visual logos but we only have code -->
-                    <span class="text-xl font-serif font-bold text-white tracking-tight">McKinsey <span class="font-sans font-normal">& Company</span></span>
+                    <span class="text-xl font-serif font-bold text-white tracking-tight">McKinsey <span
+                            class="font-sans font-normal">& Company</span></span>
                     <span class="text-lg font-sans font-bold text-white tracking-tighter">WORLD ECONOMIC FORUM</span>
-                    <span class="text-xl font-serif font-bold text-white">MIT <span class="font-sans font-normal text-base">Sloan</span></span>
+                    <span class="text-xl font-serif font-bold text-white">MIT <span
+                            class="font-sans font-normal text-base">Sloan</span></span>
                 </div>
             </div>
 
@@ -125,30 +145,44 @@
     <section class="bg-slate-800/30 border-t border-slate-800 py-16 px-4">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold text-center mb-10 text-slate-200">Dentro de este reporte ejecutivo:</h2>
-            
+
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Item 1 -->
-                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-colors">
+                <div
+                    class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-colors">
                     <div class="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
-                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
                     </div>
                     <h3 class="font-semibold text-white mb-2">Las 5 Señales de Alerta</h3>
-                    <p class="text-sm text-slate-400">Los patrones exactos que hacen a un rol obsoleto en el mercado actual.</p>
+                    <p class="text-sm text-slate-400">Los patrones exactos que hacen a un rol obsoleto en el mercado
+                        actual.</p>
                 </div>
 
                 <!-- Item 2 -->
-                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-colors">
+                <div
+                    class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-colors">
                     <div class="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
-                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
                     </div>
                     <h3 class="font-semibold text-white mb-2">El Test de Vulnerabilidad</h3>
-                    <p class="text-sm text-slate-400">Una matriz de autoevaluación de 0 a 10 puntos para medir tu seguridad.</p>
+                    <p class="text-sm text-slate-400">Una matriz de autoevaluación de 0 a 10 puntos para medir tu
+                        seguridad.</p>
                 </div>
 
                 <!-- Item 3 -->
-                <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-colors">
+                <div
+                    class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-colors">
                     <div class="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
-                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
                     </div>
                     <h3 class="font-semibold text-white mb-2">El Semáforo de Riesgo</h3>
                     <p class="text-sm text-slate-400">Diagnóstico inmediato de tu situación actual y próximos pasos.</p>
@@ -159,11 +193,13 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800 py-8 px-4">
-        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+        <div
+            class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
             <p>© 2025 Profesional Antifrágil. Todos los derechos reservados.</p>
             <a href="#" class="hover:text-slate-300 transition-colors">Política de Privacidad</a>
         </div>
     </footer>
 
 </body>
+
 </html>
