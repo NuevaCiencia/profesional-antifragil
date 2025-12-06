@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profesional Antifrágil - Auditoría 2025</title>
+    <meta name="description"
+        content="Descubre si tu puesto está en riesgo. Auditoría gratuita de vulnerabilidad ante la IA.">
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        slate: {
-                            900: '#0f172a', // Custom dark if needed, but default is fine
-                        }
-                    }
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { slate: { 900: '#0f172a' } }
                 }
             }
         }
@@ -35,25 +33,16 @@
 
 <body class="bg-slate-900 text-slate-50 antialiased selection:bg-blue-500 selection:text-white">
 
-    <!-- Navbar -->
     <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/5 bg-slate-900/80 backdrop-blur-md">
         <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-            <!-- Logo -->
-            <div class="font-extrabold text-xl tracking-tight">
-                PA<span class="text-blue-500">.</span>
-            </div>
-            <!-- Right Text -->
-            <div class="text-xs font-medium text-slate-500 uppercase tracking-wider">
-                Edición 2025
-            </div>
+            <div class="font-extrabold text-xl tracking-tight">PA<span class="text-blue-500">.</span></div>
+            <div class="text-xs font-medium text-slate-500 uppercase tracking-wider">Edición 2025</div>
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="pt-28 pb-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
 
-            <!-- Alert Tag -->
             <div
                 class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-700 bg-slate-800/50 mb-8">
                 <span class="relative flex h-2 w-2">
@@ -64,7 +53,6 @@
                 <span class="text-xs font-medium text-slate-300 tracking-wide">INFORME DE INVESTIGACIÓN GRATUITO</span>
             </div>
 
-            <!-- Headline -->
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
                 ¿Tu carrera sobrevivirá a la <br class="hidden md:block" />
                 <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-white to-blue-200">
@@ -72,46 +60,51 @@
                 </span>
             </h1>
 
-            <!-- Subtitle -->
             <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
                 Hemos identificado las 5 señales ocultas que indican que un rol gerencial está a punto de ser
                 reemplazado. Descubre tu nivel de riesgo real en 10 minutos.
             </p>
 
-            <!-- Mockup Image -->
             <div class="relative w-full max-w-sm mx-auto mb-12 group perspective-1000">
-                <!-- Glow effect -->
                 <div
                     class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200">
                 </div>
-
-                <!-- Image Container -->
                 <div class="relative transform transition-all duration-500 hover:scale-[1.02] hover:-rotate-1">
                     <img src="public/portada-auditoria.png" alt="Auditoría de Vulnerabilidad 2025"
-                        alt="Auditoría de Vulnerabilidad 2025"
                         class="w-full h-auto rounded-lg shadow-2xl shadow-blue-900/20 border border-slate-700/50">
                 </div>
             </div>
 
-            <!-- Capture Form -->
-            <div class="max-w-md mx-auto mb-16">
-                <form class="flex flex-col gap-4"
-                    onsubmit="event.preventDefault(); alert('Gracias por tu interés. (Simulación)');">
+            <div class="max-w-md mx-auto mb-16 ml-subscribe-form" id="mlb2-34290536">
+
+                <form class="flex flex-col gap-4 ml-block-form"
+                    action="https://assets.mailerlite.com/jsonp/1964417/forms/172992915470026711/subscribe" data-code=""
+                    method="post" target="_blank">
+
+                    <input type="hidden" name="ml-submit" value="1">
+                    <input type="hidden" name="anticsrf" value="true">
+
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <svg class="h-5 w-5 text-slate-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                fill="currentColor" aria-hidden="true">
+                                fill="currentColor">
                                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                             </svg>
                         </div>
-                        <input type="email" required placeholder="tucorreo@empresa.com"
-                            class="w-full bg-slate-800 border border-slate-700 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-3.5 placeholder-slate-500 transition-colors" />
+                        <input aria-label="email" aria-required="true" type="email" name="fields[email]" required
+                            placeholder="tucorreo@empresa.com" autocomplete="email"
+                            class="w-full bg-slate-800 border border-slate-700 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block pl-10 p-3.5 placeholder-slate-500 transition-colors" />
                     </div>
 
                     <button type="submit"
-                        class="w-full text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-3.5 text-center shadow-lg shadow-blue-500/30 transition-all transform hover:-translate-y-0.5">
+                        class="primary w-full text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-3.5 text-center shadow-lg shadow-blue-500/30 transition-all transform hover:-translate-y-0.5">
                         ENVIARME LA AUDITORÍA AHORA →
+                    </button>
+
+                    <button disabled="disabled" style="display: none;" type="button"
+                        class="loading w-full text-white bg-slate-700 font-bold rounded-lg text-sm px-5 py-3.5 text-center">
+                        Procesando...
                     </button>
 
                     <p class="text-xs text-slate-500 flex items-center justify-center gap-1">
@@ -125,12 +118,10 @@
                 </form>
             </div>
 
-            <!-- Authority Bar -->
             <div class="border-t border-slate-800 pt-10 pb-4">
                 <p class="text-sm text-slate-500 mb-6 font-medium">Inteligencia basada en reportes de:</p>
                 <div
                     class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-                    <!-- Text placeholders for logos as per instructions to use visual logos but we only have code -->
                     <span class="text-xl font-serif font-bold text-white tracking-tight">McKinsey <span
                             class="font-sans font-normal">& Company</span></span>
                     <span class="text-lg font-sans font-bold text-white tracking-tighter">WORLD ECONOMIC FORUM</span>
@@ -142,13 +133,10 @@
         </div>
     </main>
 
-    <!-- Benefits Section -->
     <section class="bg-slate-800/30 border-t border-slate-800 py-16 px-4">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold text-center mb-10 text-slate-200">Dentro de este reporte ejecutivo:</h2>
-
             <div class="grid md:grid-cols-3 gap-6">
-                <!-- Item 1 -->
                 <div
                     class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-colors">
                     <div class="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
@@ -161,8 +149,6 @@
                     <p class="text-sm text-slate-400">Los patrones exactos que hacen a un rol obsoleto en el mercado
                         actual.</p>
                 </div>
-
-                <!-- Item 2 -->
                 <div
                     class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-colors">
                     <div class="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
@@ -175,8 +161,6 @@
                     <p class="text-sm text-slate-400">Una matriz de autoevaluación de 0 a 10 puntos para medir tu
                         seguridad.</p>
                 </div>
-
-                <!-- Item 3 -->
                 <div
                     class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-colors">
                     <div class="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
@@ -192,14 +176,26 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800 py-8 px-4">
         <div
             class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-            <p>© 2025 Profesional Antifrágil. Todos los derechos reservados.</p>
+            <p>© 2025 Profesional Antifrágil. Todos los derechos reservados. V1.0</p>
             <a href="#" class="hover:text-slate-300 transition-colors">Política de Privacidad</a>
         </div>
     </footer>
+
+    <script>
+        // Función de redirección para TU formulario específico (ID 34290536)
+        function ml_webform_success_34290536() {
+            try {
+                window.top.location.href = 'https://profesionalantifragil.com/oferta.html';
+            } catch (e) {
+                window.location.href = 'https://profesionalantifragil.com/oferta.html';
+            }
+        }
+    </script>
+
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v2d8fb224f358" type="text/javascript"></script>
 
 </body>
 
